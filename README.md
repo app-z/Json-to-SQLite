@@ -38,6 +38,59 @@ Parametrs
 3. List Objects
 4. Fields of Class. This fields will be column name in database
 
+Example
+
+Input class
+```
+public class Airport {
+
+	@Expose
+	private String fs;
+	@Expose
+	private String iata;
+	@Expose
+	private String icao;
+	@Expose
+	private String name;
+	@Expose
+	private String city;
+	@Expose
+	private String cityCode;
+	@Expose
+	private String countryCode;
+	@Expose
+	private String countryName;
+	@Expose
+	private String regionName;
+	@Expose
+	private String timeZoneRegionName;
+	@Expose
+	private String localTime;
+	@Expose
+	private Float utcOffsetHours;
+	@Expose
+	private Double latitude;
+	@Expose
+	private Double longitude;
+	@Expose
+	private Integer elevationFeet;
+	@Expose
+	private Integer classification;
+	@Expose
+	private Boolean active;
+	@Expose
+	private String delayIndexUrl;
+	@Expose
+	private String weatherUrl;
+```
+
+To be converted to column names
+```
+CREATE TABLE airports (
+_id INTEGER, fs TEXT, iata TEXT, icao TEXT, name TEXT, city TEXT, cityCode TEXT, countryCode TEXT, countryName TEXT, regionName TEXT, timeZoneRegionName TEXT, localTime TEXT, utcOffsetHours FLOAT, latitude REAL, longitude REAL, elevationFeet INTEGER, classification INTEGER, active BOOLEAN, delayIndexUrl TEXT, weatherUrl TEXT);
+```
+
+
 Enjoy ;-)
 
 =================
