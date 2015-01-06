@@ -4,7 +4,7 @@ Json-to-SQLite
 Json to SQLite example
 
 
-This code convert Json string file to SQLite database
+This code convert Json string from file to SQLite database
 
 
 How to use
