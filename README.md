@@ -36,7 +36,7 @@ Parametrs
 1. SQLite Database Name
 2. Table name
 3. List Objects
-4. Fields of Class. This fields will be column name in table
+4. Fields of Class. This fields will be columns name in table
 
 Example
 
