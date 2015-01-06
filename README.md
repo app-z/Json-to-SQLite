@@ -9,19 +9,19 @@ This code convert Json string file to SQLite database
 
 How to use
 
-Create sqlite convertor: 
+Create sqlite convertor
 SQLiteDB sqlite = new SQLiteDB();
 
-Create gson parser:
+Create gson parser
 Gson gson = new Gson();
 
-Load Json string from disk:
+Load Json string from disk
 String jStr = LoadAssetFile("airports.json");
 
 Parse Json objects in your Java classes
 Airports airoports = gson.fromJson(jStr, Airports.class);
 
-Convert your Classes to SQLite Database:
+Convert your Classes to SQLite Database
 sqlite.createDb("airports.db", airoports.getClass().getSimpleName()
     .toLowerCase(), airoports.getAirports(),
     Airport.class.getDeclaredFields());
