@@ -40,7 +40,34 @@ Parametrs
 
 Example
 
-Input class
+Input Json Object List
+```
+ "airports": [
+  {
+   "fs": "CLO",
+   "iata": "CLO",
+   "icao": "SKCL",
+   "name": "Alfonso B. Aragon Airport",
+   "city": "Cali",
+   "cityCode": "CLO",
+   "countryCode": "CO",
+   "countryName": "Colombia",
+   "regionName": "South America",
+   "timeZoneRegionName": "America/Bogota",
+   "localTime": "2015-01-06T03:05:07.018",
+   "utcOffsetHours": -5,
+   "latitude": 3.543056,
+   "longitude": -76.381389,
+   "elevationFeet": 3162,
+   "classification": 3,
+   "active": true,
+   "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/CLO?codeType=fs",
+   "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/CLO?codeType=fs"
+  },
+...
+```
+
+Parsed class
 ```
 public class Airport {
 	@Expose
