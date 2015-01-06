@@ -116,6 +116,9 @@ CREATE TABLE airports (
 _id INTEGER, fs TEXT, iata TEXT, icao TEXT, name TEXT, city TEXT, cityCode TEXT, countryCode TEXT, countryName TEXT, regionName TEXT, timeZoneRegionName TEXT, localTime TEXT, utcOffsetHours FLOAT, latitude REAL, longitude REAL, elevationFeet INTEGER, classification INTEGER, active BOOLEAN, delayIndexUrl TEXT, weatherUrl TEXT);
 ```
 
+Generate Plain Old Java Objects from JSON http://www.jsonschema2pojo.org/
+
+Full list airports see https://developer.flightstats.com/products
 
 Enjoy ;-)
 
