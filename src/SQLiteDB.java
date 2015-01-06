@@ -51,7 +51,7 @@ public class SQLiteDB {
 		}
 
 		String strSqlCreate = "CREATE TABLE " + tableName + " (\n";
-		strSqlCreate += "_id INTEGER, ";
+		strSqlCreate += "_id INTEGER PRIMARY KEY AUTOINCREMENT, ";
 		for (Field field : fields) {
 			System.out.println(field.getName() + "=>" + field.getType());
 			strSqlCreate += field.getName() + " " + getFieldAsType(field) + ", ";
@@ -71,7 +71,6 @@ public class SQLiteDB {
 			statement.executeUpdate(strSqlCreate);
 
 			statement.execute("BEGIN TRANSACTION;");
-			int _id = 1;
 			for (Object dataItem : dataList) {
 				String values = "";
 				for (Field field : fields) {
@@ -81,7 +80,7 @@ public class SQLiteDB {
 					val = val.toString().replace("'", "''");
 					values += "'" + val + "',";
 				}
-				values = (_id++) + ", "	+ values.substring(0, values.length() - 1);
+				values = "?, "	+ values.substring(0, values.length() - 1);
 				System.out.println(values);
 				statement.execute("INSERT INTO " + tableName + " VALUES(" + values + ");");
 			}
