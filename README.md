@@ -3,7 +3,9 @@ Json-to-SQLite
 
 Json to SQLite example
 
+
 This code convert Json string file to SQLite database
+
 
 How to use
 
@@ -26,10 +28,10 @@ sqlite.createDb("airports.db", airoports.getClass().getSimpleName()
 
 Parametrs
 
-1 - SQLite Database Name
-2 - Table name
-3 - List Objects
-4 - Fields of Class. This fields will be column name in database
+1. SQLite Database Name
+2. Table name
+3. List Objects
+4. Fields of Class. This fields will be column name in database
 
 Enjoy ;-)
 
