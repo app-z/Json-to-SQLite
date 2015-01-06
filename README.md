@@ -36,14 +36,13 @@ Parametrs
 1. SQLite Database Name
 2. Table name
 3. List Objects
-4. Fields of Class. This fields will be column name in database
+4. Fields of Class. This fields will be column name in table
 
 Example
 
 Input class
 ```
 public class Airport {
-
 	@Expose
 	private String fs;
 	@Expose
