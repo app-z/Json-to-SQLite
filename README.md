@@ -113,12 +113,18 @@ public class Airport {
 To be converted to column names
 ```
 CREATE TABLE airports (
-_id INTEGER, fs TEXT, iata TEXT, icao TEXT, name TEXT, city TEXT, cityCode TEXT, countryCode TEXT, countryName TEXT, regionName TEXT, timeZoneRegionName TEXT, localTime TEXT, utcOffsetHours FLOAT, latitude REAL, longitude REAL, elevationFeet INTEGER, classification INTEGER, active BOOLEAN, delayIndexUrl TEXT, weatherUrl TEXT);
+_id INTEGER PRIMARY KEY AUTOINCREMENT, fs TEXT, iata TEXT, icao TEXT, name TEXT, city TEXT, cityCode TEXT, countryCode TEXT, countryName TEXT, regionName TEXT, timeZoneRegionName TEXT, localTime TEXT, utcOffsetHours FLOAT, latitude REAL, longitude REAL, elevationFeet INTEGER, classification INTEGER, active BOOLEAN, delayIndexUrl TEXT, weatherUrl TEXT);
+```
+Values will added
+```
+?, 'HLP','HLP','WIIH','Halim Perdana Kusuma Airport','Jakarta','JKT','ID','Indonesia','Asia','Asia/Jakarta','2015-01-06T15:05:07.209','7.0','-6.268056','106.890278','85','4','true','https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/HLP?codeType=fs','https://api.flightstats.com/flex/weather/rest/v1/json/all/HLP?codeType=fs'
 ```
 
 Generate Plain Old Java Objects from JSON http://www.jsonschema2pojo.org/
 
 Full list airports see https://developer.flightstats.com/products
+
+Json to SQLite nested classes import example see here https://github.com/app-z/Json-to-SQLite-Nested
 
 Enjoy ;-)
 
